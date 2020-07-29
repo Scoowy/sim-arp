@@ -88,6 +88,8 @@ public class Diagram extends JPanel {
         for (int i = 0; i < pages.length; i++) {
             if (pages[i] == '\u0000') {
                 pages[i] = value;
+                // Si se dio un error de pagina se suma 1 a numPageErrors
+                numPageErrors += 1;
                 return i;
             }
         }
@@ -142,8 +144,6 @@ public class Diagram extends JPanel {
 
         if (indice != -1) {
             pages[indice] = '\u0000';
-            // Si se dio un error de pagina se suma 1 a numPageErrors
-            numPageErrors += 1;
         }
     }
 
