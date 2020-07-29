@@ -6,7 +6,7 @@
 
     <groupId>org.g2jl</groupId>
     <artifactId>sim-arp</artifactId>
-    <version>Alpha-20.07.12</version>
+    <version>Beta-20.07.29</version>
 
     <build>
         <plugins>
@@ -47,6 +47,14 @@
     </build>
 
     <dependencies>
+
+        <!-- https://mvnrepository.com/artifact/com.jgoodies/forms -->
+        <dependency>
+            <groupId>com.jgoodies</groupId>
+            <artifactId>forms</artifactId>
+            <version>1.2.1</version>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/com.formdev/flatlaf -->
         <dependency>
             <groupId>com.formdev</groupId>
@@ -54,37 +62,11 @@
             <version>0.34</version>
             <!--            <scope>runtime</scope>-->
         </dependency>
-        <!-- https://mvnrepository.com/artifact/com.formdev/flatlaf-swingx -->
-        <dependency>
-            <groupId>com.formdev</groupId>
-            <artifactId>flatlaf-swingx</artifactId>
-            <version>0.34</version>
-        </dependency>
         <!-- https://mvnrepository.com/artifact/com.formdev/flatlaf-intellij-themes -->
         <dependency>
             <groupId>com.formdev</groupId>
             <artifactId>flatlaf-intellij-themes</artifactId>
             <version>0.34</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.swinglabs.swingx/swingx-all -->
-        <dependency>
-            <groupId>org.swinglabs.swingx</groupId>
-            <artifactId>swingx-all</artifactId>
-            <version>1.6.5-1</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/com.miglayout/miglayout-core -->
-        <dependency>
-            <groupId>com.miglayout</groupId>
-            <artifactId>miglayout-core</artifactId>
-            <version>5.2</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/com.miglayout/miglayout-swing -->
-        <dependency>
-            <groupId>com.miglayout</groupId>
-            <artifactId>miglayout-swing</artifactId>
-            <version>5.2</version>
         </dependency>
 
     </dependencies>
