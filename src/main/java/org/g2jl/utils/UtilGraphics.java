@@ -17,18 +17,16 @@ public class UtilGraphics {
     public static final Color STROKE_COLOR = Color.BLACK;
     public static final Color BACKGROUND_COLOR_PAGE = Color.WHITE;
     public static final Color TEXT_COLOR_PAGE = Color.DARK_GRAY;
+    public static final Color BACKGROUND_COLOR_CANVAS = new Color(243, 243, 244);
 
     private static final double HEIGHT_FONT_CELL = 0.6;
 
     public static Font fontPages;
     public static final Font FONT_PAGE = new Font("Segoe UI", Font.PLAIN, 14);
 
-    public static final int MIN_NUM_CELLS_ROW = 2;
-    public static final int MAX_NUM_CELLS_ROW = 20;
-    public static final int MIN_NUM_PAGES = 1;
-    public static final int MAX_NUM_PAGES = 10;
     public static final Dimension MIN_SIZE_CELL = new Dimension(30, 30);
-    public static final Dimension MAX_SIZE_CELL = new Dimension(80, 80);
+
+    public static final int PADDING_CANVAS = 20;
 
     /**
      * Método que establece una fuente por defecto para las paginas.
@@ -54,20 +52,6 @@ public class UtilGraphics {
     public static void calcFontSize(int cellH) {
         int size = (int) Math.floor(cellH * HEIGHT_FONT_CELL);
         setFontPages(size);
-    }
-
-    /**
-     * Método que centra un texto vertical y horizontalmente, dentro de un area definida por dos puntos.
-     *
-     * @param g           Contexto gráfico
-     * @param topLeft     Punto inicial del area
-     * @param bottomRight Punto final del area
-     * @param text        Numero a centrar
-     * @param align       alineación respecto de la celda
-     * @return Point punto donde dibujarlo
-     */
-    public static Point alignText(Graphics g, Point topLeft, Point bottomRight, int text, AlignmentText align) {
-        return alignText(g, topLeft, bottomRight, Integer.toString(text), align);
     }
 
     /**
@@ -108,6 +92,5 @@ public class UtilGraphics {
                 return new Point(0, 0);
         }
     }
-
 }
 
