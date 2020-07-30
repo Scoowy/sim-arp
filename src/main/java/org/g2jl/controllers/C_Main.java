@@ -55,7 +55,7 @@ public class C_Main implements ActionListener {
                         diagrama.repaint(diagrama.getCanvasTopLeft().x, diagrama.getCanvasTopLeft().y, diagrama.getCanvasDimension().width, diagrama.getCanvasDimension().height);
 
                         // Mostramos el numero de errores de pagina que han ocurrido
-                        view.getTfdPageErrors().setText(String.valueOf(diagrama.getNumPageErrors() + numPages));
+                        view.getTfdPageErrors().setText(String.valueOf(diagrama.getNumPageErrors()));
                     } else {
                         // Mensaje de alerta
                         JOptionPane.showMessageDialog(null, "Numero de paginas debe ser mayor a 0", "Aviso", JOptionPane.WARNING_MESSAGE);
