@@ -169,7 +169,7 @@ public class Diagram extends JPanel {
 
         // Si no existe nada que graficar se muestra un mensaje en el area de dibujo
         if (paginations.isEmpty()) {
-            // Se establece la funee de texto
+            // Se establece la fuente de texto
             g.setFont(UtilGraphics.FONT_PAGE);
             String message = "Ingrese una cadena de referencia...";
 
